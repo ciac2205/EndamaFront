@@ -1,0 +1,158 @@
+.Container__navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+}
+.ContainerLogo img {
+  width: 150px;
+  height: 50px;
+  padding-left: 30px;
+  object-fit: contain;
+}
+.container__submenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+.container__submenu a {
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  list-style: none;
+}
+.container__submenu a:hover{
+  color: #BE9063;
+ 
+}
+.container__submenu li {
+  padding-left: 10px;
+}
+.container__submenu a:active {
+  border-bottom: 2px solid #ffffff;
+}
+
+
+
+
+.container__submenu1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+.container__submenu1 a {
+  color: #ffffff;
+  font-size: 15px;
+  text-decoration: none;
+  list-style: none;
+}
+.container__submenu1 a:hover{
+  color: #BE9063;
+ 
+}
+.container__submenu1 li {
+  padding-left: 10px;
+}
+.container__submenu1 a:active {
+  border-bottom: 2px solid #ffffff;
+}
+.containerSearch {
+  width: 550px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  
+ background-color: #ffffff;
+}
+.containerSearch input {
+  width: 300px;
+  text-decoration: none;
+  border: none;
+  color: #000000;
+  outline: none;
+  padding-left: 10px;
+}
+.containerSearch i {
+  color:#000000;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.containerSearch input::placeholder {
+color: black;
+}
+.container__submenu1  a i {
+  font-size: 25px;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .carousel .slide {
+   margin-top: 200px;
+  }
+  .Container__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    
+  }
+  .ContainerLogo img {
+    /* width:250px; */
+    width: 190px;
+   margin: 10px;
+   
+  }
+  .container__submenu {
+    padding: 10px;
+    
+  }
+  .container__submenu a{
+    font-size: 20px;
+  }
+  .container__submenu1 {
+   display: flex;
+   position: absolute ;
+   top:10px;
+   /* left: 200px; */
+    /* left: 40px;  */
+    left: 10px;
+   z-index: 3;
+
+  }
+  .container__submenu1  a i {
+    font-size: 40px;
+  }
+  .container__submenu1  .user {
+    display: none;
+  }
+ 
+  .containerSearch {
+    margin: 25px;
+    height: 40px;
+  }
+  .containerSearch input::placeholder {
+    color: black;
+    font-size: 20px;
+    }
+    .containerSearch i {
+      color:#000000;
+      padding-left: 10px;
+      font-size: 20px;
+    }
+    .containerSearch input {
+      width: 200px;
+    
+    }
+}

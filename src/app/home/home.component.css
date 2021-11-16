@@ -1,0 +1,152 @@
+.w-100 {
+  height: auto;
+  background-size: cover;
+  box-sizing: border-box;
+}
+/* nuevos productos  */
+.subtitle {
+  display: flex;
+  justify-content: center;
+}
+.subtitle h1 {
+  padding: 25px 0px;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+/* cards */
+.cardSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardContainer {
+  width: 249px;
+  height: 353px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.imageContainer {
+  width: 216px;
+  height: 200px;
+  justify-content: center;
+  position: relative;
+}
+
+.imageContainer .imageCard {
+  width: 216px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.containerContent {
+  width: 216px;
+  text-align: center;
+  color: gray;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* .containerContent:hover {
+    background-color: grey;
+  } */
+.containerContent h3 {
+  /* text-transform: uppercase; */
+  /* padding:  35px 10px; */
+  padding: 20px 11px 11px 11px;
+  color: #373d3f;
+  line-height: 20px;
+  font-size: 1rem;
+}
+.containerContent span {
+  color: darkred;
+}
+.containerContent p {
+  padding: 3px;
+  color: #f60045;
+  font-weight: 700;
+  font-size: 1.0625rem;
+}
+.containerContent button {
+  margin-top: 5px;
+  background-color: #000000;
+  width: 125px;
+  height: 32px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 11px;
+  padding: 2.5px;
+}
+.containerPrice {
+  font-size: 1.8rem;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+/* wishlist */
+
+.wishList {
+  width: 50px !important;
+  height: 25px !important;
+  position: absolute;
+  right: 0;
+  top: 5px !important;
+  z-index: 1;
+  background-color: transparent;
+}
+.wishList button {
+  border: none;
+  position: absolute;
+}
+.wishList span {
+  width: 50px !important;
+  height: 25px !important;
+  outline: 0 !important;
+  position: absolute;
+  background: url("https://lamparayamx.vtexassets.com/arquivos/icon_favorite.png")
+    no-repeat 50% !important;
+  background-size: 25px !important;
+}
+.wishList span:hover {
+  width: 50px !important;
+  height: 25px !important;
+  outline: 0 !important;
+  position: absolute;
+  background: url("https://lamparayamx.vtexassets.com/arquivos/icon_favorite_active.png")
+    no-repeat 50% !important;
+  background-size: 25px !important;
+}
+
+/* seccion de imagenes */
+
+    @media only screen and (max-width: 800px) {
+      .cardSection {
+          width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      /* .cardContainer {
+          width:160px;
+    margin-left:10px;
+      }
+      .imageContainer{
+        width:160px;
+        height:160px;
+        
+      
+      }
+      .imageContainer img {
+        width:150px;
+        height:150px;
+    } */
+  }
